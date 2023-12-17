@@ -1,0 +1,2 @@
+sudo docker build -t my-fastapi-app .
+sudo docker run -d --name my-fastapi-container -p 80:80 my-fastapi-app
