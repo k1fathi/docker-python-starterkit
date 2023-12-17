@@ -1,0 +1,26 @@
+# Ignore files and directories from being included in the Docker build context
+
+# Ignore version control files
+.git
+.gitignore
+
+# Ignore temporary files or build artifacts
+*.pyc
+__pycache__
+.DS_Store
+
+# Exclude any large or unnecessary files
+logs/
+*.log
+
+# Exclude files specific to the local development environment (if applicable)
+venv/
+node_modules/
+
+# Exclude Docker-related files (if not required in the container)
+Dockerfile
+docker-compose.yml
+
+# Exclude editor/IDE configuration files (if applicable)
+.vscode/
+.idea/
